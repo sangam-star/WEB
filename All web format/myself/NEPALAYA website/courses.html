@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>course</title>
+    <link rel="stylesheet" href="course.html">
+</head>
+
+<body>
+    
+    <div class="container">
+        <!-- BSc CSIT Course Details -->
+        <div class="course-card">
+            <h2>BSc CSIT</h2>
+            <p><strong>Duration:</strong> 4 years</p>
+            <p><strong>Eligibility:</strong> 10+2 or equivalent</p>
+            <p><strong>Course Fee:</strong> NPR 5,00,000</p>
+            <p><strong>Course Structure:</strong> 8 semesters</p>
+            <p><strong>Course Coordinator:</strong> Mr. Kapil Bam Thakuri</p>
+            <p><strong>Contact:</strong> 01-1234567</p>
+            <p><strong>Email:</strong> csit01@nepalaya.edu.np</p>
+            <a href="apply.html" class="apply-btn" target="_blank">Apply Now</a>
+        </div>
+
+        <!-- BCA Course Details -->
+        <div class="course-card">
+            <h2>BCA</h2>
+            <p><strong>Duration:</strong> 4 years</p>
+            <p><strong>Eligibility:</strong> 10+2 or equivalent</p>
+            <p><strong>Course Fee:</strong> NPR 3,50,000</p>
+            <p><strong>Course Structure:</strong> 8 semesters</p>
+            <p><strong>Course Coordinator:</strong> Mr. Kapil Bam Thakuri</p>
+            <p><strong>Contact:</strong> 01-1234567</p>
+            <p><strong>Email:</strong> bca01@nepalaya.edu.np</p>
+
+            <a href="apply.html" class="apply-btn" target="_blank"> Apply Now</a>
+        </div>  
+    </div>
+
+    <style>
+        p{
+
+            color: black;
+            background-color: white;
+
+        }
+        h2{
+            color: blue;
+        }
+        h3{
+            color: red;
+        }
+    </style>
+
+    
+    <div class="container">
+        <h2>Select Your Education</h2>
+
+        <!-- +2 Stream Selection -->
+        <div class="group">
+            <h3>+2 Stream (select)</h3>
+            <label><input type="radio" name="plus2" value="Physical" onclick="showSubjects('physical-subjects')"> Physical Group</label>
+            <label><input type="radio" name="plus2" value="Biology" onclick="showSubjects('biology-subjects')"> Biology Group</label>
+            
+            <div id="physical-subjects" class="subjects">
+                <strong>Subjects for Physical Group:</strong>
+                <ul>
+                    <li>Physics</li>
+                    <li>Chemistry</li>
+                    <li>Mathematics</li>
+                    <li>Computer Science</li>
+                </ul>
+            </div>
+
+            <div id="biology-subjects" class="subjects">
+                <strong>Subjects for Biology Group:</strong>
+                <ul>
+                    <li>Physics</li>
+                    <li>Chemistry</li>
+                    <li>Biology</li>
+                    <li>Mathematics</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bachelor's Program Selection -->
+        <div class="group">
+            <h3>Bachelor's Program (select your suitable course)</h3>
+            <label><input type="radio" name="bachelor" value="BCA" onclick="showSubjects('bca-subjects')"> BCA</label>
+            <label><input type="radio" name="bachelor" value="CSIT" onclick="showSubjects('csit-subjects')"> CSIT</label>
+            <label><input type="radio" name="bachelor" value="BBA" onclick="showSubjects('bba-subjects')"> BBA</label>
+            <label><input type="radio" name="bachelor" value="BBS" onclick="showSubjects('bbs-subjects')"> BBS</label>
+            <label><input type="radio" name="bachelor" value="BHM" onclick="showSubjects('bhm-subjects')"> BHM</label>
+
+            <div id="bca-subjects" class="subjects">
+                <strong>Subjects for BCA:</strong>
+                <ul>
+                    <li>Programming in C</li>
+                    <li>Data Structures</li>
+                    <li>Web Development</li>
+                    <li>Database Management</li>
+                </ul>
+            </div>
+
+            <div id="csit-subjects" class="subjects">
+                <strong>Subjects for CSIT:</strong>
+                <ul>
+                    <li>Computer Architecture</li>
+                    <li>Data Structures</li>
+                    <li>Networking</li>
+                    <li>Software Engineering</li>
+                </ul>
+            </div>
+
+            <div id="bba-subjects" class="subjects">
+                <strong>Subjects for BBA:</strong>
+                <ul>
+                    <li>Business Communication</li>
+                    <li>Marketing Management</li>
+                    <li>Accounting</li>
+                    <li>Financial Management</li>
+                </ul>
+            </div>
+
+            <div id="bbs-subjects" class="subjects">
+                <strong>Subjects for BBS:</strong>
+                <ul>
+                    <li>Microeconomics</li>
+                    <li>Statistics</li>
+                    <li>Business Law</li>
+                    <li>Taxation</li>
+                </ul>
+            </div>
+
+            <div id="bhm-subjects" class="subjects">
+                <strong>Subjects for BHM:</strong>
+                <ul>
+                    <li>Food & Beverage Management</li>
+                    <li>Front Office Operations</li>
+                    <li>Tourism Studies</li>
+                    <li>Housekeeping Management</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <h2>General Information Form</h2>
+    
+            <form>
+                <!-- Name -->
+                <div class="form-group">
+                    <label for="name">Full Name:</label><br>
+                    <input type="text" id="name" name="name" required><br>
+                </div>
+    
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br>
+                </div>
+    
+                <!-- Address -->
+                <div class="form-group">
+                    <label for="address">Address:</label><br>
+                    <input type="text" id="address" name="address" required><br>
+                </div>
+    
+                <!-- Who Recommended -->
+                <div class="form-group">
+                    <label>Who recommended you?</label>
+                    <div class="recommend-options">
+                        <label><input type="radio" name="recommend" value="Friends"> Friends</label>
+                        <label><input type="radio" name="recommend" value="Facebook"> Facebook</label>
+                        <label><input type="radio" name="recommend" value="Instagram"> Instagram</label>
+                        <label><input type="radio" name="recommend" value="TikTok"> TikTok</label>
+                        <label><input type="radio" name="recommend" value="Newspaper"> Newspaper</label> <br><br>
+                    </div>
+                </div>
+
+        <button class="submit-btn">Submit</button>
+    </div>
+
+    <script>
+        function showSubjects(subjectId) {
+            // Hide all subjects first
+            let allSubjects = document.querySelectorAll('.subjects');
+            allSubjects.forEach(subject => {
+                subject.style.display = 'none';
+            });
+
+            // Show the selected subject group
+            document.getElementById(subjectId).style.display = 'block';
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <link rel="stylesheet" href="signup.html">
+    <style>
+
+        input{
+            margin: 1px;
+            padding: 1px;
+        }
+        button{
+            margin: 1px;
+            padding: 2px;
+        }
+        form{
+            margin: 5px;
+            padding: 5px;
+        } 
+    </style>
+    
+</head>
+<body>
+    <div>
+        <h2>Signup</h2>
+        <form action="/signup" method="post">
+            <label for="signup-name">First name:</label>
+            <input type="text" id="signup-name" name="name" required><br><br>
+            <label for="signup-name">Last name:</label>
+            <input type="text" id="signup- Last name" name=" Last name" required><br><br>
+            <label for="signup-email">Email:</label>
+            <input type="email" id="signup-email" name="email" required><br><br>
+            <label for="gender">Gender:</label> <br>
+        <select name="gender" id="gender" required>
+            <option value="">Select your gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        <br> <br>
+            <label for="signup-username">Username:</label>
+            <input type="text" id="signup-username" name="username" required><br>
+            <br>
+            <label for="signup-password">Password:</label>
+            <input type="password" id="signup-password" name="password" required><br>
+            <br>
+            <button type="submit" >Sign Up</button><br><br>
+            <button type="reset"> Reset</button> 
+
+            
+        </form>
+    </div>
+
+    <div>
+        <h2>Login</h2>
+        <form action="/login" method="post">
+            <label for="login-username">Username:</label>
+            <input type="text" id="login-username" name="username" required>
+            <br>
+            <label for="login-password">Password:</label>
+            <input type="password" id="login-password" name="password" required>
+            <br>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+
+    <style>
+        h2{
+            color: blue;
+            text-align: left;
+        }
+
+        label{
+            color: blue;
+            background-color: lightpink;
+            text-align: left;
+        }
+    button{
+        background-color: lightblue;
+        color: black;
+        border: none;
+        padding: 5px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 2px 2px;
+        cursor: pointer;
+    }
+    </style>
+    
+</body>
+</html>
